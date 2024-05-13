@@ -38,3 +38,12 @@ git push <nombre-remoto> <nombre-de-tu-rama>
 git push --set-upstream <nombre-remoto> <nombre-de-tu-rama>
 
 De todas formas, si tu rama ha sido creada recientemente, puede que tengas que cargar y subir tu rama con el siguiente comando:
+
+git log 
+para ver todos los cambios
+
+para volver al presente:
+git checkout master
+
+git diff
+te dice que se cambio
