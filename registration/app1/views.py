@@ -3,6 +3,10 @@ from django.contrib.auth.models import User
 from django.contrib.auth import authenticate,login,logout
 from django.contrib.auth.decorators import login_required
 # Create your views here.
+
+def index(request):
+    return render(request, 'index.html')
+
 @login_required(login_url='login')
 def HomePage(request):
     return render (request,'home.html')
@@ -42,4 +46,4 @@ def LoginPage(request):
 
 def LogoutPage(request):
     logout(request)
-    return redirect('login')
+    return redirect('index')
