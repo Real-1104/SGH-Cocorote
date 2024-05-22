@@ -1,10 +1,6 @@
-.submenu {
-    display: none;
-}
-
-  
-  
-
+  a {
+    color: aquamarine;
+  }
   
   .nav-tabs {
     --bs-nav-tabs-border-width: 1px;

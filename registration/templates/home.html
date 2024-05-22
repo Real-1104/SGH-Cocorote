@@ -9,8 +9,9 @@
         <meta name="author" content="" />
         <title>SGH Cocorote</title>
         <link href="{% static 'https://cdn.jsdelivr.net/npm/simple-datatables@7.1.2/dist/style.min.css' %}" rel="stylesheet" />
-        <link href="{% static 'css/styles.css' %}" rel="stylesheet" />
+        <link href="{% static 'css/styles.css' %}" rel="stylesheet" />  
         <link href="{% static 'css/menu.css' %}" rel="stylesheet" />
+        <link href="{% static 'css/menu_desplegable.css' %}" rel="stylesheet" />
         <script src="{% static 'https://use.fontawesome.com/releases/v6.3.0/js/all.js' %}" crossorigin="anonymous"></script>
     </head>
     <body class="sb-nav-fixed">
@@ -49,32 +50,42 @@
                     <div class="sb-sidenav-menu">
 
 
+  
 
-                        
+                       
+<div class="menu-container"> 
+                          <a href="#" class="dropdown-toggle menu" 
+                          data-toggle="dropdown" role="button" 
+                          aria-haspopup="true" 
+                          aria-expanded="false">Perfil <span class="caret"></span></a>
 
-<script>
-    $(document).ready(function(){
-    $('.menu-titulo').click(function(){
-        $(this).next('.submenu').slideToggle();
-    });
-});
+                          <ul class="dropdown-menu submenu">
+                            <li><a class="link-submenu" href="#">Nombre de usuario</a></li>
+                            <li><a class="link-submenu" href="#">Foto de Perfil</a></li>                            
+                            
+                          </ul> </div>
 
-</script>
-                        <div class="menu">
-                            <div class="menu-titulo">Configuración</div>
-                            <div class="submenu">
-                                <a href="#">Cambiar contraseña</a>
-                                <a href="#">Preguntas de seguridad</a>
-                            </div>
-                        </div>
-                        <div class="menu">
-                            <div class="menu-titulo">Perfil</div>
-                            <div class="submenu">
-                                <a href="#">Cambiar usuario</a>
-                                <a href="#">Cambiar foto de perfil</a>
-                            </div>
-                        </div>
-                        
+<div class="menu-container">  <a href="#" class="dropdown-toggle menu" 
+                          data-toggle="dropdown" role="button" 
+                          aria-haspopup="true" 
+                          aria-expanded="false"> Datos Geo <span class="caret"></span></a>
+
+                          <ul class="dropdown-menu submenu">
+                            <li><a class="link-submenu" href="#">Temperatura Max</a></li>
+                            <li><a class="link-submenu" href="#">Temperatura Min</a></li>                            
+                            
+                          </ul> </div> 
+
+                <div class="menu-container">      <a href="#" class="dropdown-toggle menu" 
+                          data-toggle="dropdown" role="button" 
+                          aria-haspopup="true" 
+                          aria-expanded="false">Configuración <span class="caret"></span></a>
+
+                          <ul class="dropdown-menu submenu">
+                            <li><a class="link-submenu" href="#">Contraseña</a></li>
+                            <li><a class="link-submenu" href="#">Preguntas de seguridad</a></li>                            
+                            
+                          </ul> </div>                             
                           
 
 
@@ -185,6 +196,8 @@
         <script src="assets/demo/chart-bar-demo.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/simple-datatables@7.1.2/dist/umd/simple-datatables.min.js" crossorigin="anonymous"></script>
         <script src="js/datatables-simple-demo.js"></script>
-        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     </body>
 </html>

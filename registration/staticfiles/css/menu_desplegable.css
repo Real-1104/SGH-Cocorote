@@ -1,0 +1,55 @@
+.menu-container{
+    display: block;
+    
+    position: relative; /* Establecer la posición relativa para los contenedores de menú */
+    z-index: 1; /* Asignar un valor de z-index para controlar el apilamiento */
+      }
+
+.dropdown-menu {
+    display:none;
+    
+    
+    
+  }
+
+  
+  /* Mostrar el menú desplegable al hacer clic en el enlace */
+  .dropdown-toggle:focus + .dropdown-menu,
+  .dropdown-toggle:hover + .dropdown-menu {
+    display: block;
+    background-color: #ffffff; /* #212529 */
+  }
+
+  /* Agregar espacio entre los elementos del menú desplegable */
+.dropdown-menu.submenu li a {
+    position: relative; /* Cambiar la posición a relativa */
+  z-index: 1000;
+    padding: 10px 20px; /* Ajusta el espacio alrededor del texto (arriba/abajo, izquierda/derecha) según tus preferencias */
+  }
+
+  .menu {
+   margin-left: 20px;
+   background-color: aqua;
+  }
+
+  .submenu {
+    border: none;
+    margin: 10px;
+    
+  }
+ 
+.submenu a {
+    
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: bold;
+    
+    
+    
+}
+
+.submenu a:hover {
+    background-color: red;
+    
+}
+
