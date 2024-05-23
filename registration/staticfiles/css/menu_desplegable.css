@@ -1,14 +1,12 @@
 .menu-container{
-    display: block;
+    display: block;  
     
     position: relative; /* Establecer la posición relativa para los contenedores de menú */
     z-index: 1; /* Asignar un valor de z-index para controlar el apilamiento */
       }
 
 .dropdown-menu {
-    display:none;
-    
-    
+    display:none; 
     
   }
 
@@ -22,7 +20,8 @@
 
   /* Agregar espacio entre los elementos del menú desplegable */
 .dropdown-menu.submenu li a {
-    position: relative; /* Cambiar la posición a relativa */
+    position: relative;
+    text-decoration: none; /* Cambiar la posición a relativa */
   z-index: 1000;
     padding: 10px 20px; /* Ajusta el espacio alrededor del texto (arriba/abajo, izquierda/derecha) según tus preferencias */
   }
