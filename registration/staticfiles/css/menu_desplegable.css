@@ -17,7 +17,7 @@
   .dropdown-toggle:focus + .dropdown-menu,
   .dropdown-toggle:hover + .dropdown-menu {
     display: block;
-    background-color: #ffffff; /* #212529 */
+    background-color: #212529; /* #212529 */
   }
 
   /* Agregar espacio entre los elementos del menú desplegable */
@@ -29,7 +29,7 @@
 
   .menu {
    margin-left: 20px;
-   background-color: aqua;
+   
   }
 
   .submenu {
@@ -48,8 +48,8 @@
     
 }
 
-.submenu a:hover {
+/* .submenu a:hover {
     background-color: red;
     
-}
+} */
 
