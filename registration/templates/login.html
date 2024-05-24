@@ -117,31 +117,9 @@
         cursor: pointer;
       }
   
-      .social {
-        margin-top: 30px;
-        display: flex;
-      }
-  
-      .social div {
-        background: red;
-        width: 150px;
-        border-radius: 3px;
-        padding: 5px 10px 10px 5px;
-        background-color: rgba(255, 255, 255, 0.27);
-        color: #eaf0fb;
-        text-align: center;
-      }
-  
-      .social div:hover {
-        background-color: rgba(255, 255, 255, 0.47);
-      }
-  
-      .social .fb {
-        margin-left: 25px;
-      }
-  
-      .social i {
-        margin-right: 4px;
+      .crear_cuenta{
+        padding: 10px;
+        
       }
     </style>
   </head>
@@ -163,10 +141,11 @@
         <input type="password" placeholder="Password" id="password" name="pass">
 
         <button type="submit">Ingresa</button>
-        <div class="social">
-            <div class="go"><i class="fab fa-google"></i> </div>
-            <div class="fb"><i class="fab fa-facebook"></i> </div>
-          </div>
+        
+        <div class="crear_cuenta">
+          <a href="{% url 'signup' %}" >Crear cuenta</a>
+        </div>
+          
     </form>
 </body>
 </html>
