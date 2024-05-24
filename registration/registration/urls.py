@@ -24,8 +24,9 @@ urlpatterns = [
     path('signup/', views.SignupPage,name='signup'),
     path('login/', views.LoginPage,name='login'),
     path('home/', views.HomePage,name='home'),
-    path('logout/', views.LogoutPage,name='logout'),
     path('capas/', views.CapasPage,name='capas'),
     path('poblacion/', views.PoblacionPage,name='poblacion'),
-    path('reportes/', views.ReportesPage,name='reportes'),
+    path('report/', views.ReportPage,name='report'),
+    path('logout/', views.LogoutPage,name='logout'),
+    
 ]

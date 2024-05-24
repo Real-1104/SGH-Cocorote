@@ -34,6 +34,12 @@ def SignupPage(request):
 def CapasPage(request):
     return render (request,'capas.html')
 
+def PoblacionPage(request):
+    return render (request,'poblacion.html')
+
+def ReportPage(request):
+    return render (request,'report.html')
+
 def LoginPage(request):
     if request.method=='POST':
         username=request.POST.get('username')

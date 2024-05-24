@@ -150,14 +150,73 @@
             <div id="layoutSidenav_content">
                 <main>
                     <div class="container-fluid px-4">
-                        <h1 class="mt-4">SGH Cocorote</h1>
+                        <h1 class="mt-4">Crear Capas</h1>
                         <ol class="breadcrumb mb-4">
                         </ol>
                          <section class="pt-4">
             <div class="container px-lg-5">
                 <!-- Page Features-->
 
-               
+                <div class="row">
+                  <div class="col-sm-4 mb-3">
+                    <div class="card">
+                      <div class="card-body">
+                        <h5 class="card-title">Crear LLuvia</h5>
+                        <p class="card-text">Aqui Puedes Crear Tu Capa de LLuvia</p>
+                        <a href="{% url 'capas' %}" class="btn btn-primary">Crear LLuvia</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-4 mb-3">
+                    <div class="card">
+                      <div class="card-body">
+                        <h5 class="card-title">Crear Temperatura Minima</h5>
+                        <p class="card-text">Aqui Puedes Crear Tu Capa de Temperatura Minima</p>
+                        <a href="{% url 'poblacion' %}" class="btn btn-primary">Crear Temperatura Min</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-4 mb-3">
+                    <div class="card">
+                      <div class="card-body">
+                        <h5 class="card-title">Crear Temperatura Maxima</h5>
+                        <p class="card-text">Aqui Puedes Crear Tu Capa de Temperatura Maxima</p>
+                        <a href="{% url 'report' %}" class="btn btn-primary">Crear Temperatura Max</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col-sm-4 mb-3">
+                    <div class="card">
+                      <div class="card-body">
+                        <h5 class="card-title">Crear Humedad</h5>
+                        <p class="card-text">Aqui Puedes Crear Tu Capa de Humedad</p>
+                        <a href="{% url 'capas' %}" class="btn btn-primary">Crear Humedad</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-4 mb-3">
+                    <div class="card">
+                      <div class="card-body">
+                        <h5 class="card-title">Precipitacion</h5>
+                        <p class="card-text">Aqui Puedes Crear Capas de Precipitacion</p>
+                        <a href="{% url 'poblacion' %}" class="btn btn-primary"> Crear Precipitacion</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-4 mb-3">
+                    <div class="card">
+                      <div class="card-body">
+                        <h5 class="card-title">Velocidad de Viento</h5>
+                        <p class="card-text">Aqui Puedes Crear Capas de Velocidad de Vientos</p>
+                        <a href="{% url 'report' %}" class="btn btn-primary">Crear Velocidad de Vientos</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                
                   
             
             <div id="" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
