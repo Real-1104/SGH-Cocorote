@@ -3240,7 +3240,7 @@ textarea.form-control-lg {
   --bs-dropdown-font-size: 1rem;
   --bs-dropdown-color: #212529;
   --bs-dropdown-bg: #fff;
-  --bs-dropdown-border-color: var(--bs-border-color-translucent);
+  --bs-dropdown-border-color: #212529;
   --bs-dropdown-border-radius: 0.375rem;
   --bs-dropdown-border-width: 1px;
   --bs-dropdown-inner-border-radius: calc(0.375rem - 1px);
@@ -3258,7 +3258,7 @@ textarea.form-control-lg {
   --bs-dropdown-header-color: #6c757d;
   --bs-dropdown-header-padding-x: 1rem;
   --bs-dropdown-header-padding-y: 0.5rem;
-  position: absolute;
+  
   z-index: var(--bs-dropdown-zindex);
   display: none;
   min-width: var(--bs-dropdown-min-width);
@@ -10375,6 +10375,7 @@ body {
 }
 .sb-nav-fixed .sb-topnav {
   z-index: 1039;
+  padding: 40px
 }
 .sb-nav-fixed #layoutSidenav #layoutSidenav_nav {
   width: 225px;
@@ -10422,7 +10423,10 @@ body {
 .sb-topnav .navbar-brand {
   width: 225px;
   margin: 0;
+
 }
+
+
 .sb-topnav.navbar-dark #sidebarToggle {
   color: rgba(255, 255, 255, 0.5);
 }
@@ -10438,6 +10442,7 @@ body {
 }
 .sb-sidenav .sb-sidenav-menu {
   flex-grow: 1;
+  margin-top: 60px;
 }
 .sb-sidenav .sb-sidenav-menu .nav {
   flex-direction: column;
