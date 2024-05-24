@@ -1,9 +1,21 @@
 .menu-container{
     display: block;  
+    padding-top: 16%;   
     
     position: relative; /* Establecer la posición relativa para los contenedores de menú */
     z-index: 1; /* Asignar un valor de z-index para controlar el apilamiento */
       }
+
+.menu-container a {
+        text-decoration: none;
+        font-size: 20px;
+        color: rgb(169, 172, 175);
+      }
+
+      .menu-container :hover {
+        color: rgb(169, 172, 175);
+      
+      }      
 
 .dropdown-menu {
     display:none; 
@@ -31,6 +43,8 @@
    
   }
 
+
+
   .submenu {
     border: none;
     margin: 10px;
@@ -47,8 +61,9 @@
     
 }
 
-/* .submenu a:hover {
-    background-color: red;
+.submenu a:hover {
+    color: #b9bfc4;
+    font-size: 17px;
     
-} */
+}
 
