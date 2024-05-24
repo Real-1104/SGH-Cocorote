@@ -1,210 +1,72 @@
-<!DOCTYPE html>
-<html lang="en">
-  {% load static %}
-    <head>
-        <meta charset="utf-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <meta name="description" content="" />
-        <meta name="author" content="" />
-        <title>SGH Cocorote</title>
-        <link href="{% static 'https://cdn.jsdelivr.net/npm/simple-datatables@7.1.2/dist/style.min.css' %}" rel="stylesheet" />
-       <!--  css -->
-        <link href="{% static 'css/menu_desplegable.css' %}" rel="stylesheet" />
-        <link href="{% static 'css/styles.css' %}" rel="stylesheet" />  
-        <link href="{% static 'css/menu.css' %}" rel="stylesheet" />
-        <!-- Font font-awesome -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-        <link href="{% static '/fontawesomefree/css/all.min.css' %}" rel="stylesheet">
-       
-        <script src="{% static 'https://use.fontawesome.com/releases/v6.3.0/js/all.js' %}" crossorigin="anonymous"></script>
-    </head>
-    <body class="sb-nav-fixed">
-        <nav class="sb-topnav navbar navbar-expand navbar-dark bg-dark">
-            <!-- Navbar Brand-->
-            <a class="navbar-brand ps-3" href="index.html">Inicio</a>
-            <!-- Sidebar Toggle-->
-            <button class="btn btn-link btn-sm order-1 order-lg-0 me-4 me-lg-0" id="sidebarToggle" href="#!"><i class="fas fa-bars"></i></button>
-            <!-- Navbar Search-->
-            <form class="d-none d-md-inline-block form-inline ms-auto me-0 me-md-3 my-2 my-md-0">
-                <div class="input-group">
-                    <input class="form-control" type="text" placeholder="Search for..." aria-label="Search for..." aria-describedby="btnNavbarSearch" />
-                    <button class="btn btn-primary" id="btnNavbarSearch" type="button"><i class="fas fa-search"></i></button>
-                </div>
-            </form>
-            <!-- Navbar-->
-            <ul class="navbar-nav ms-auto ms-md-0 me-3 me-lg-4">
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="fas fa-user fa-fw"></i></a>
-                    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
-                        <li><a class="dropdown-item" href="#!">Settings</a></li>
-                        <li><a class="dropdown-item" href="#!">Activity Log</a></li>
-                        <li><hr class="dropdown-divider" /></li>
-<<<<<<< HEAD
-                        <li><a class="dropdown-item" href="/logout">Logout</a></li>
+{% extends "base-menu.html" %}
 
-                        <li><a class="dropdown-item" href="{% url 'logout' %}">Salir</a></li>
-=======
+{% block titulo %} SGH-INICIO {% endblock %}
 
-                        <li><a class="dropdown-item" href="/logout">Logout</a></li>
-             <li><a class="dropdown-item" href="{% url 'logout' %}">Salir</a></li>
+{% block contenido %} 
+<!-- aqui comienza el area de trabajo -->
 
->>>>>>> c8f5ae5 (menu desplegable con iconos)
-                    </ul>
-                </li>
-            </ul>
-        </nav>
-        <div id="layoutSidenav">
-            <div id="layoutSidenav_nav">
-                <nav class="sb-sidenav accordion sb-sidenav-dark" id="sidenavAccordion">
-                    <div class="sb-sidenav-menu">
+<div class="container-fluid px-4">
+  <h1 class="mt-4">SGH Cocorote</h1>
+  <ol class="breadcrumb mb-4">
+  </ol>
+   <section class="pt-4">
+<div class="container px-lg-5">
+<!-- Page Features-->
+
+<div class="row">
+<div class="col-sm-4">
+<div class="card">
+  <div class="card-body">
+    <h5 class="card-title">Crear Capas</h5>
+    <p class="card-text">Aqui Puedes Crear Tu Capa</p>
+    <a href="{% url 'capas' %}" class="btn btn-primary">Crear Capas</a>
+  </div>
+</div>
+</div>
+<div class="col-sm-4">
+<div class="card">
+  <div class="card-body">
+    <h5 class="card-title">Poblacion</h5>
+    <p class="card-text">Aqui Puedes Observar Las Poblaciones de Cocorote</p>
+    <a href="{% url 'poblacion' %}" class="btn btn-primary">Ver Poblaciones</a>
+  </div>
+</div>
+</div>
+<div class="col-sm-4">
+<div class="card">
+  <div class="card-body">
+    <h5 class="card-title">Reportes</h5>
+    <p class="card-text">Aqui Puedes Ver los Reportes</p>
+    <a href="{% url 'report' %}" class="btn btn-primary">Ver Los Reportes</a>
+  </div>
+</div>
+</div>
+</div>
 
 
-                <div class="menu-container">  <!-- menu despleglable    -->
-                     <a href="#" class="dropdown-toggle menu" 
-                          data-toggle="dropdown" role="button" 
-                          aria-haspopup="true" 
-                          aria-expanded="false"><i class="fa-solid fa-gear"></i> Configuración <span class="caret"></span></a>
-
-                          <ul class="dropdown-menu submenu">
-                            <li><a class="link-submenu" href="#">Contraseña</a></li>
-                            <li><a class="link-submenu" href="#">Preguntas de seguridad</a></li>                            
-                            
-                          </ul> <hr> </div>  <!-- fin de menu despleglable    -->   
-                          
-                          
-
-                          <div class="nav">                           
-                            <!-- menu espacio   -->  
-                                <div >
-
-                          </div>
-                                        <!-- fin espacio  -->
-
-                                <div class="menu-container"> <!-- menu despleglable 3   -->
-                                     <a href="#" class="dropdown-toggle menu" 
-                                    data-toggle="dropdown" role="button" 
-                                    aria-haspopup="true" 
-                                    aria-expanded="false"><i class="fa-solid fa-table"></i> Datos Geográficos <span class="caret"></span></a>
-          
-                                    <ul class="dropdown-menu submenu">
-                                      <li><a class="link-submenu" href="#">Temperatura Max</a></li>
-                                      <li><a class="link-submenu" href="#">Temperatura Min</a></li>                            
-                                      
-                                    </ul> <hr></div> 
-                                
+<div id="" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+<div class="modal-dialog modal-lg">
+<div class="modal-content">
+  <div class="modal-header">
+      <h3 class="text-center mb-0"></h3>
+      <button type="button" class="close float-right" aria-label="Close" data-dismiss="modal">
+        <span aria-hidden="true">&#xD7;</span>
+      </button>
+  </div>
+  <div class="modal-body p-0 text-center bg-alt">
+      <img src="//placehold.it/1200x700/222?text=..." id="galleryImage" class="loaded-image mx-auto img-fluid">
+  </div>
+  <div class="modal-footer">
+      <button class="btn btn-primary" data-dismiss="modal" aria-hidden="true">OK</button>
+  </div>
+</div>
+</div>
+</div>
 
 
-                                <div class="menu-container"> <!-- menu desplegable 3 -->
-                                    <a href="#" class="dropdown-toggle menu" 
-                                    data-toggle="dropdown" role="button" 
-                                    aria-haspopup="true" 
-                                    aria-expanded="false"><i class="fa-solid fa-user"></i> Configurar Perfil <span class="caret"></span></a>
-          
-                                    <ul class="dropdown-menu submenu">
-                                      <li><a class="link-submenu" href="#">Nombre de usuario</a></li>
-                                      <li><a class="link-submenu" href="#">Foto de Perfil</a></li>                            
-                                      
-                                    </ul> <hr> </div>
-                            </a>
-                        </div>
-                          
 
 
-                    </div>
-                    <div class="sb-sidenav-footer">
-                        <div class="small">SGH</div>
-                        
-                    </div>
-                </nav>
-            </div>
-            <div id="layoutSidenav_content">
-                <main>
-                    <div class="container-fluid px-4">
-                        <h1 class="mt-4">SGH Cocorote</h1>
-                        <ol class="breadcrumb mb-4">
-                        </ol>
-                         <section class="pt-4">
-            <div class="container px-lg-5">
-                <!-- Page Features-->
 
-                <div class="row">
-                    <div class="col-sm-4">
-                      <div class="card">
-                        <div class="card-body">
-                          <h5 class="card-title">Crear Capas</h5>
-                          <p class="card-text">Aqui Puedes Crear Tu Capa</p>
-                          <a href="{% url 'capas' %}" class="btn btn-primary">Crear Capas</a>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-sm-4">
-                      <div class="card">
-                        <div class="card-body">
-                          <h5 class="card-title">Poblacion</h5>
-                          <p class="card-text">Aqui Puedes Observar Las Poblaciones de Cocorote</p>
-                          <a href="{% url 'poblacion' %}" class="btn btn-primary">Ver Poblaciones</a>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-sm-4">
-                      <div class="card">
-                        <div class="card-body">
-                          <h5 class="card-title">Reportes</h5>
-                          <p class="card-text">Aqui Puedes Ver los Reportes</p>
-                          <a href="{% url 'report' %}" class="btn btn-primary">Ver Los Reportes</a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  
-            
-            <div id="" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
-                <div class="modal-dialog modal-lg">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h3 class="text-center mb-0"></h3>
-                            <button type="button" class="close float-right" aria-label="Close" data-dismiss="modal">
-                              <span aria-hidden="true">&#xD7;</span>
-                            </button>
-                        </div>
-                        <div class="modal-body p-0 text-center bg-alt">
-                            <img src="//placehold.it/1200x700/222?text=..." id="galleryImage" class="loaded-image mx-auto img-fluid">
-                        </div>
-                        <div class="modal-footer">
-                            <button class="btn btn-primary" data-dismiss="modal" aria-hidden="true">OK</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-  
 
-                
-            
-                </main>
-                <footer class="py-4 bg-light mt-auto">
-                    <div class="container-fluid px-4">
-                        <div class="d-flex align-items-center justify-content-between small">
-                            <div class="text-muted">Copyright &copy; SGH</div>
-                            <div>
-                                <a href="#">Privacy Policy</a>
-                                &middot;
-                                <a href="#">Terms &amp; Conditions</a>
-                            </div>
-                        </div>
-                    </div>
-                </footer>
-            </div>
-        </div>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
-        <script src="js/scripts.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js" crossorigin="anonymous"></script>
-        <script src="assets/demo/chart-area-demo.js"></script>
-        <script src="assets/demo/chart-bar-demo.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/simple-datatables@7.1.2/dist/umd/simple-datatables.min.js" crossorigin="anonymous"></script>
-        <script src="js/datatables-simple-demo.js"></script>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-	<!-- Latest compiled and minified JavaScript -->
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-    </body>
-</html>
+<!-- aqui termina el area de trabajo -->
+{% endblock %}
