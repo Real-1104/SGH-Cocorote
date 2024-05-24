@@ -31,6 +31,9 @@ def SignupPage(request):
 
     return render (request,'signup.html')
 
+def CapasPage(request):
+    return render (request,'capas.html')
+
 def LoginPage(request):
     if request.method=='POST':
         username=request.POST.get('username')
@@ -47,3 +50,4 @@ def LoginPage(request):
 def LogoutPage(request):
     logout(request)
     return redirect('index')
+
