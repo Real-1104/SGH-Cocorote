@@ -2,6 +2,7 @@ from django.shortcuts import render,HttpResponse,redirect
 from django.contrib.auth.models import User
 from django.contrib.auth import authenticate,login,logout
 from django.contrib.auth.decorators import login_required
+from django.contrib.auth.views import PasswordChangeDoneView
 # Create your views here.
 
 def index(request):
@@ -27,8 +28,6 @@ def SignupPage(request):
             return redirect('login')
         
 
-
-
     return render (request,'signup.html')
 
 def CapasPage(request):
@@ -39,6 +38,20 @@ def PoblacionPage(request):
 
 def ReportPage(request):
     return render (request,'report.html')
+
+
+def recuperar_passwordPage(request):
+      if request.method=='POST':
+        username=request.POST.get('username')
+        pass1=request.POST.get('pass')
+        user=authenticate(request,username=username,password=pass1)
+        if user is not None:
+            login(request,user)
+            return redirect('home')
+        else:
+            return HttpResponse ("Username or Password is incorrect!!!")
+
+      return render (request,'recuperar_password.html')
 
 def LoginPage(request):
     if request.method=='POST':

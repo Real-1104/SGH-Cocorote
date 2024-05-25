@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Signup Page</title>
+    <title>SGH Cocorote</title>
  
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
@@ -140,23 +140,21 @@ button{
     </div>
     <form action="" method="post">
         {% csrf_token %} 
-        <h3>Signup Here</h3>
+        <h3>Nuevo Usuario</h3>
 
-        <label for="username">Username</label>
+        <label for="username">Usuario</label>
         <input type="text" placeholder="Username" name="username" id="username">
 
-        <label for="email">Email</label>
-        <input type="email" placeholder="Email or Phone" name="email" id="email">
 
-        <label for="password1">Password</label>
+        <label for="password1">Contraseña</label>
         <input type="password" placeholder="Password" id="password1" name="password1">
 
 
-        <label for="password2">Confrom Password</label>
+        <label for="password2">Confirmar Contraseña</label>
         <input type="password" placeholder="Confrom Password" id="password2" name="password2">
-        <button type="submit">Signup</button>
+        <button type="submit">Enviar</button>
         
-        <a href="{% url 'login' %}" >Ya tengo una cuenta</a>
+        <a href="{% url 'login' %}" >Tengo Una Cuenta</a>
     </form>
 </body>
 </html>

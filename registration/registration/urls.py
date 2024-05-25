@@ -28,5 +28,6 @@ urlpatterns = [
     path('poblacion/', views.PoblacionPage,name='poblacion'),
     path('report/', views.ReportPage,name='report'),
     path('logout/', views.LogoutPage,name='logout'),
+    path('password/', views.recuperar_passwordPage,name='recuperar_password'),
     
 ]
