@@ -1,71 +1,16 @@
-.menu-container{
-    display: block;  
-     
-    
-    position: relative; /* Establecer la posición relativa para los contenedores de menú */
-    z-index: 1; /* Asignar un valor de z-index para controlar el apilamiento */
-      }
+.ssubmenu li {
+  list-style-type: none;
+}
 
-.menu-container a {
-        text-decoration: none;
-        font-size: 18px;
-        color: rgb(169, 172, 175);
-      }
-
-      .menu-container :hover {
-        color: rgb(169, 172, 175);
-      
-      }      
-
-.dropdown-menu {
-    display:none; 
-    
-    
-  }
-
+.smenu {
   
-  /* Mostrar el menú desplegable al hacer clic en el enlace */
-  .dropdown-toggle:focus + .dropdown-menu,
-  .dropdown-toggle:hover + .dropdown-menu {
-    display: block;
-    background-color: #212529; /* #212529 */
-  }
-
-  /* Agregar espacio entre los elementos del menú desplegable */
-.dropdown-menu.submenu li a {
-    position: relative;
-    text-decoration: none; /* Cambiar la posición a relativa */
-  z-index: 1000;
-    padding: 10px 20px; /* Ajusta el espacio alrededor del texto (arriba/abajo, izquierda/derecha) según tus preferencias */
-  }
-
-  .menu {
-   margin-left: 20px;
-   
-  }
-
-
-
-  .submenu {
-    border: none;
-    margin: 10px;
-    
-  }
- 
-.submenu a {
-    
-    text-decoration: none;
-    font-size: 16px;
-    font-weight: bold;
-    
-    
-    
-    
+  font-size: 18px;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-.submenu a:hover {
-    color: #b9bfc4;
-    font-size: 17px;
-    
+button {
+  padding: 10px 40%;
+  background-color: #212529;
+  color: #FFF;
+  
 }
-
