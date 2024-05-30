@@ -1,0 +1,43 @@
+{% extends "base-menu.html" %}
+
+{% block titulo %} Preguntas de Seguridad {% endblock %}
+
+{% block contenido %} 
+<!-- aqui comienza el area de trabajo -->
+
+<div class="container-fluid px-4">
+    <h1 class="mt-4">Preguntas de Seguridad</h1>
+    <a href="{%  url 'home' %}" class=" btn btn-dark">Atras</a>
+    <ol class="breadcrumb mb-4">
+    </ol>
+     <section class="pt-4">
+
+
+        <form>
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Color Favorito</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+              
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label">Comida Favorito</label>
+              <input type="password" class="form-control" id="exampleInputPassword1">
+            </div>
+
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Nombre de la Mama</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+         
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label">Nombre del Papa</label>
+              <input type="password" class="form-control" id="exampleInputPassword1">
+            </div>
+            
+            <button type="submit" class="btn btn-primary">Guardar Datos</button>
+          </form>
+
+
+
+ <!-- fin de area de trabajo -->
+{% endblock %}

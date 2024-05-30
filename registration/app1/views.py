@@ -39,6 +39,15 @@ def PoblacionPage(request):
 def ReportPage(request):
     return render (request,'report.html')
 
+def PerfilPage(request):
+    return render (request,'perfil.html')
+
+def PreguntaPage(request):
+    return render (request,'pregunta.html')
+
+def contraseñaPage(request):
+    return render (request,'contraseña.html')
+
 
 def recuperar_passwordPage(request):
       if request.method=='POST':

@@ -69,8 +69,9 @@
                           aria-expanded="false"><i class="fa-solid fa-gear"></i> Configuración <span class="caret"></span></a>
 
                           <ul class="dropdown-menu submenu">
-                            <li><a class="link-submenu" href="#">Contraseña</a></li>
-                            <li><a class="link-submenu" href="#">Preguntas de seguridad</a></li>                            
+                            <li><a class="link-submenu" href="{% url 'contraseña' %}">Contraseña</a></li>
+                            <li><a class="link-submenu" href="{% url 'preguntas' %}">Perfil del Usuario</a></li>                       
+                            ">Preguntas de seguridad</a></li>                            
                             
                           </ul> <hr> </div>  <!-- fin de menu despleglable    -->   
                           
@@ -104,8 +105,7 @@
                                     aria-expanded="false"><i class="fa-solid fa-user"></i> Configurar Perfil <span class="caret"></span></a>
           
                                     <ul class="dropdown-menu submenu">
-                                      <li><a class="link-submenu" href="#">Nombre de usuario</a></li>
-                                      <li><a class="link-submenu" href="#">Foto de Perfil</a></li>                            
+                                      <li><a class="link-submenu" href="{% url 'perfil' %}">Perfil del Usuario</a></li>                       
                                       
                                     </ul> <hr> </div>
                             </a>
